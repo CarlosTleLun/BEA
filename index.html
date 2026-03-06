@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEA-APP</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <h1 class="logo">
+            <img src="img/logo.png" class="icon" alt="">
+            <span class="amarillo">BEA</span>_mendezm
+        </h1>
+
+        <nav class="nav">
+            <a href="#about">Sobre mí</a>
+            <a href="#temas">Temas</a>
+            <a href="#ligas">Recursos</a>
+            <a href="#footer">Contacto</a>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h3 class="letrero">✦ CIENCIA - STEM - RECURSOS</h3>
+                <h2>El conocimiento<br><span class="amarillo">al alcance de<br>todos</span></h2>
+                <p>Un espacio donde la ciencia se explica sin filtros, con rigor académico y lenguaje que realmente
+                    entiendes.</p><br><br>
+                <form id="formBuscador">
+                    <div class="buscador-wrapper">
+                        <input type="text" id="buscador" placeholder="🔎 Buscar contenido...">
+                    </div>
+                </form>
+            </div>
+        </section>
+        <div class="content">
+            <section id="about" class="section fade">
+                <section class="perfil-hero">
+                    <div class="perfil-contenido">
+                        <p class="saludo">Hola</p>
+                        <h1>Soy <span>Beatriz</span></h1>
+                        <h2>Creo contenido que impulsa el aprendizaje consciente y el bienestar emocional.<br>
+                            Comparto técnicas de estudio, sugerencias prácticas y reflexiones que ayudan a crecer
+                            académica y personalmente, integrando también lifestyle y contenido visual que inspira una
+                            vida más equilibrada.</h2>
+                        <button href="#footer" class="btn-perfil">Contáctame</button>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+
+                                const boton = document.querySelector(".btn-perfil");
+                                const footer = document.querySelector("#footer");
+
+                                boton.addEventListener("click", function () {
+                                    footer.scrollIntoView({
+                                        behavior: "smooth"
+                                    });
+                                });
+
+                            });
+                        </script>
+                    </div>
+
+                    <div class="perfil-imagen">
+                        <img src="img/perfil.png" alt="Bea">
+                    </div>
+                </section>
+            </section>
+            <div class="quien-detras">
+                <h3>✦ Quién está detrás</h3>
+
+                <p>
+                    Soy estudiante de Ingeniería Química Industrial y me apasiona compartir lo que voy aprendiendo
+                    de una forma didáctica y sencilla. Creo que la ciencia se vuelve poderosa cuando deja de estar
+                    encerrada en libros de texto y empieza a vivir en conversaciones cotidianas.
+                </p>
+                <br>
+                <p>
+                    Esta página nació con una idea simple: que puedas acceder a temas de ciencia en un formato
+                    más completo, con recursos confiables y sin tener que buscarlos en mil lugares distintos.
+                    Todo en un solo lugar, disponible cuando lo necesites.
+                </p>
+
+            </div>
+            <section class="enlaces-interes fade" id="temas">
+
+                <div class="grid-enlaces">
+
+                    <div class="enlace-card">
+                        <div class="icono">🧪</div>
+                        <h3>Química</h3>
+                        <p></p>
+                        <a href="#quimica">Conocer más</a>
+                    </div>
+
+                    <div class="enlace-card">
+                        <div class="icono">⭐</div>
+                        <h3>Recomendaciones</h3>
+                        <p></p>
+                        <a href="#recomendaciones">Conocer más</a>
+                    </div>
+
+                    <!--<div class="enlace-card">
+                        <div class="icono">🧬</div>
+                        <h3>Biología</h3>
+                        <p></p>
+                        <a href="#">Conocer más</a>
+                    </div>-->
+
+                    <!--<div class="enlace-card">
+                        <div class="icono">⚛️</div>
+                        <h3>Física</h3>
+                        <p></p>
+                        <a href="#">Conocer más</a>
+                    </div>-->
+
+                    <div class="enlace-card">
+                        <div class="icono">👩‍🔬</div>
+                        <h3>Mujeres STEM</h3>
+                        <p></p>
+                        <a href="#">Conocer más</a>
+                    </div>
+
+                    <div class="enlace-card">
+                        <div class="icono">💛</div>
+                        <h3>Bienestar</h3>
+                        <p></p>
+                        <a href="#bienestar">Conocer más</a>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section class="frase-destacada">
+                <div class="contenido-frase">
+                    <p>
+                        “Comparto lo que aprendo porque creo que el conocimiento
+                        se multiplica cuando se regala. La ciencia no debería ser
+                        privilegio de quienes tienen acceso a las mejores universidades.”
+                    </p>
+
+                    <div class="autor">
+                        — Bea · @bea_mendezm
+                    </div>
+                </div>
+            </section>
+
+            <section id="recursos" class="section fade">
+
+                <div id="quimica">
+
+                    <!-- CARD 1 -->
+                    <div class="item insta" data-tags="tabla periodica 1">
+                        <h3>Cómo leer la Tabla Periódica <br>Parte 1</h3>
+
+                        <div class="content-insta">
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/DUbJ84GkS6D/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                data-instgrm-version="14">
+
+                            </blockquote>
+
+                        </div>
+
+                        <div class="enlaces-temas">
+                            <!--<a href="docs/Tabla_periodica.pdf" target="_blank">
+                                <i class="fas fa-file-download"></i> Saber más
+                            </a>-->
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 2 -->
+                    <div class="item insta" data-tags="tabla periodica 2">
+
+                        <h3>Cómo leer la Tabla Periódica <br>Parte 2</h3>
+
+                        <div class="content-insta">
+
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/DUzEKxxEf8i/"
+                                data-instgrm-version="14">
+
+                            </blockquote>
+
+                        </div>
+
+                        <div class="enlaces-temas">
+                            <a href="docs/Tabla_periodica.pdf" target="_blank">
+                                <i class="fas fa-file-download"></i> Saber Más</a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="item insta" data-tags="solucion quimica">
+
+                        <h3>¿Qué es una solución Química?</h3>
+
+                        <div class="content-insta">
+
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/DVMC8VnEQz8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                data-instgrm-version="14">
+
+                            </blockquote>
+
+                        </div>
+
+                        <div class="enlaces-temas">
+                            <!--
+                            <a href="docs/Tabla_periodica.pdf" target="_blank">
+                                <i class="fas fa-file-download"></i> Saber Más</a>-->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="recomendaciones">
+
+                    <!-- CARD 1 -->
+                    <div class="item insta" data-tags="apps estudiar">
+                        <h3>APPS para estudiar</h3>
+
+                        <div class="content-insta">
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/DVcPsy8kSEN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                data-instgrm-version="14">
+
+                            </blockquote>
+
+                        </div>
+
+                        <div class="enlaces-temas">
+                            <!--<a href="docs/Tabla_periodica.pdf" target="_blank">
+                                <i class="fas fa-file-download"></i> Saber más
+                            </a>-->
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="item insta" data-tags="metodo feynman">
+                        <h3>Método Feynman</h3>
+
+                        <div class="content-insta">
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/DBEy9Rtv178/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                data-instgrm-version="14">
+
+                            </blockquote>
+
+                        </div>
+
+                        <div class="enlaces-temas">
+                            <!--<a href="docs/Tabla_periodica.pdf" target="_blank">
+                                <i class="fas fa-file-download"></i> Saber más
+                            </a>-->
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="bienestar">
+
+                    <!-- CARD 1 -->
+                    <div class="item insta" data-tags="burnout">
+                        <h3>Burnout</h3>
+
+                        <div class="content-insta">
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/DRWYIWojURa/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                data-instgrm-version="14">
+
+                            </blockquote>
+
+                        </div>
+
+                        <div class="enlaces-temas">
+                            <!--<a href="docs/Tabla_periodica.pdf" target="_blank">
+                                <i class="fas fa-file-download"></i> Saber más
+                            </a>-->
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="item insta" data-tags="self-care univeristario">
+                        <h3>La guía rápida del self-care universitario</h3>
+
+                        <div class="content-insta">
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/DRZ_HRrEUUT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                data-instgrm-version="14">
+
+                            </blockquote>
+
+                        </div>
+
+                        <div class="enlaces-temas">
+                            <!--<a href="docs/Tabla_periodica.pdf" target="_blank">
+                                <i class="fas fa-file-download"></i> Saber más
+                            </a>-->
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="item insta" data-tags="nada sale bien">
+                        <h3>¿Qué hacer cuando nada sale bien?</h3>
+
+                        <div class="content-insta">
+                            <blockquote class="instagram-media"
+                                data-instgrm-permalink="https://www.instagram.com/p/DFHMNl-RleC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                                data-instgrm-version="14">
+
+                            </blockquote>
+
+                        </div>
+
+                        <div class="enlaces-temas">
+                            <!--<a href="docs/Tabla_periodica.pdf" target="_blank">
+                                <i class="fas fa-file-download"></i> Saber más
+                            </a>-->
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </section>
+
+            <script async src="//www.instagram.com/embed.js"></script>
+
+
+            <section id="ciencia">
+                <div class="post-ciencia">
+                    <div class="icono-ciencia">🔬</div>
+
+                    <h3 class="titulo-ciencia">
+                        La ciencia es para todos
+                    </h3>
+
+                    <p class="texto-ciencia">
+                        Este es un espacio para compartir ciencia de forma accesible —
+                        no importa si eres estudiante, curioso o simplemente alguien
+                        que quiere entender el mundo un poco mejor.
+                        Aquí el conocimiento no tiene género ni nivel mínimo requerido.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="temas" id="ligas">
+
+            <h2 class="title">Recursos</h2>
+            <section class="menu-temas">
+
+                <div class="card" data-tema="cientifica" style="background-image: url('img/recursos/calendario.jpg');">
+                    <div class="overlay"></div>
+                    <h3>CIENTÍFICA<br><span>POR MES</span></h3>
+                </div>
+
+                <div class="card" data-tema="quimica" style="background-image: url('img/recursos/quimica.jpeg');">
+                    <div class="overlay"></div>
+                    <h3>Canales YouTube<br><span>QUÍMICA</span></h3>
+                </div>
+
+                <div class="card" data-tema="matematicas"
+                    style="background-image: url('img/recursos/matematicas.jpeg');">
+                    <div class="overlay"></div>
+                    <h3>CANALES<br><span>MATEMÁTICAS</span></h3>
+                </div>
+
+                <div class="card" data-tema="biologia" style="background-image: url('img/recursos/biologia.jpeg');">
+                    <div class="overlay"></div>
+                    <h3>CANALES<br><span>BIOLOGÍA</span></h3>
+                </div>
+
+            </section>
+        </div>
+        <div class="modal" id="modal">
+            <div class="modal-contenido">
+                <span class="cerrar">&times;</span>
+                <h2 id="modal-titulo"></h2>
+                <div id="modal-body"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-content">
+            <h2>✦ SIGUEME EN REDES</h2>
+            <p></p>
+            <h2><span class="amarillo">El conocimiento</span> es mejor<br>compartido</h2>
+            <p>Si te gustó lo que encontraste aquí, en Instagram publico contenido nuevo cada semana</p>
+            <div class="footer-links">
+                <a href="mailto:" class="footer-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <span>Email</span>
+                        <strong>correo@mail</strong>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/bea_mendezm/" target="_blank" class="footer-card">
+                    <i class="fa-brands fa-instagram"></i>
+                    <div>
+                        <span>Instagram</span>
+                        <strong></strong>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>© 2026 · Divulgación científica con corazón</span>
+                <span class="linea-footer"></span>
+                <span>Hecho con 🧪 ciencia y mucho café ☕</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
